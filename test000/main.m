@@ -8,10 +8,37 @@
 
 #import <Foundation/Foundation.h>
 
-int main(int argc, const char * argv[]) {
-    @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+int longestPalindromicString(char *str) {
+    int length = sizeof(str) / sizeof(char);
+    int i = 0;
+    int j = length - 1;
+    int count = 0;
+    while (i < j) {
+        if (str[i] == str[j]) {
+            i++;
+            j--;
+        }
+        else {
+            count++;
+            i = 0;
+            j = length - count;
+        }
+    }
+    if (i == j) {
+        return 2*i+1;
+    }
+    if (i > j) {
+        return 2*i;
     }
     return 0;
 }
+
+int main(int argc, const char * argv[]) {
+    char *str = malloc(INT_MAX);
+    scanf("%s",str);
+    printf("%d",longestPalindromicString(str));
+    free(str);
+    return 0;
+}
+
+

@@ -4,6 +4,46 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>1.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>2.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>3.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>4.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>5.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>6.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+		<key>7.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
+		<key>8.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
 		<key>test000.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -13,6 +53,46 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>E231C9091F60D8B300089318</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E231C9171F60E15F00089318</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E231C9221F60FB2A00089318</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E236BCDB1F6131A8001AA25D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E236BCE61F613698001AA25D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E236BCF11F6152D1001AA25D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E236BCFC1F61606A001AA25D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E236BD071F616439001AA25D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E236BD121F616E31001AA25D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
