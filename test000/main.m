@@ -34,10 +34,16 @@ int longestPalindromicString(char *str) {
 }
 
 int main(int argc, const char * argv[]) {
-    char *str = malloc(INT_MAX);
-    scanf("%s",str);
-    printf("%d",longestPalindromicString(str));
-    free(str);
+//    char *str = malloc(INT_MAX);
+//    scanf("%s",str);
+//    printf("%d",longestPalindromicString(str));
+//    free(str);
+    
+    int a = 240, b = 313;
+    int x;
+    
+    
+    
     return 0;
 }
 
