@@ -24,6 +24,8 @@ public:
     A(A &a);
     A(int x, int y);
     ~A();
+
+    void show();
 };
 
 

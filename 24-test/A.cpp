@@ -10,6 +10,8 @@
 
 A::A() {
     x = y = 0;
+    p = new char[1];
+    strcpy(p, "");
     cout << "A" << endl;
 }
 
@@ -37,4 +39,8 @@ A::A(int x, int y) {
 A::~A() {
     delete []p;
     cout << "~A" << endl;
+}
+
+void A::show() {
+    cout << x  << " " << y << endl;
 }
