@@ -63,10 +63,10 @@ public:
 int main(int argc, const char * argv[]) {
 
     //1  派生类的对象赋值给基类对象 注意：此时通过基类调用虚函数并不调用派生类的虚函数，并没有实现多态性 多态性的实现是通过基类的指针或引用实现的
-    Student s;
-    People p = s;
-    p.show();
-    cout << "hello: " << p.name << endl;
+//    Student s;
+//    People p = s;
+//    p.show();
+//    cout << "hello: " << p.name << endl;
     
     //2 派生类对象的地址赋值给基类的指针
 //    Student s;
@@ -83,10 +83,10 @@ int main(int argc, const char * argv[]) {
     
     //以下为测试
     //2 如果此时父类的析构函数没有加virtual Student的析构函数不会调用
-//    People *p = new Student();
+    People *p = new Student();
 //    p->show();
 //    cout << "hello: " << p->name << endl;
-//    delete p;
+    delete p;
 
     //如果在父类的构造函数和析构函数中存在动态分配存储空间和内存释放 则会出现内存释放错误
 //    People p;

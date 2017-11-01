@@ -8,19 +8,30 @@
 
 #import <Foundation/Foundation.h>
 
+void reversrNumber(int n) {
+    int res = 0;
+    int x = 0;
+    while (n) {
+        x = n % 10;
+        res = res * 10 + x;
+        n = n / 10;
+    }
+    printf("%d\n",res);
+}
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-
-        int a = 1234242;
-        int y = 0;
-        int m = 0;
-        while (a) {
-            m = a % 10;
-            y = y * 10 + m;
-            a = a / 10;
-        }
-        
-        NSLog(@"%d",y);
+        reversrNumber(-123124234);
+//        int a = 1234242;
+//        int y = 0;
+//        int m = 0;
+//        while (a) {
+//            m = a % 10;
+//            y = y * 10 + m;
+//            a = a / 10;
+//        }
+//
+//        NSLog(@"%d",y);
     }
     return 0;
 }

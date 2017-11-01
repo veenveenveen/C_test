@@ -1,6 +1,6 @@
 //
 //  main.cpp
-//  45-直接插入排序
+//  47-希尔排序
 //
 //  Created by 黄启明 on 2017/9/22.
 //  Copyright © 2017年 Himin. All rights reserved.
@@ -11,25 +11,36 @@
 
 using namespace std;
 
-void insertSort(vector<int> &v) {
+void shellSort(vector<int> &v) {
     int len = int(v.size());
-    for (int i = 1; i < len; i++) {
-        int tmp = v[i];
-        int j = i-1;
-        while (j >= 0 && tmp < v[j]) {
-            v[j+1] = v[j];
-            j--;
+    int d = len / 2;
+    while (d) {
+        for (int i = d; i < len; i++) {
+            int tmp = v[i];
+            int j = i-d;
+            while (j >= 0 && tmp < v[j]) {
+                v[j+d] = v[j];
+                j = j - d;
+            }
+            v[j+d] = tmp;
         }
-        v[j+1] = tmp;
+        d = d / 2;
+    
+        
         for (int i = 0; i < len; i++) {
             cout << v[i] << " ";
         }
         cout << endl;
     }
+//
+//        if (flag) {
+//            break;
+//        }
+
 }
 
 int main(int argc, const char * argv[]) {
-
+    
     int n;
     cin >> n;
     
@@ -38,11 +49,13 @@ int main(int argc, const char * argv[]) {
         cin >> v[i];
     }
     
-    insertSort(v);
+    shellSort(v);
     
     for (int i = 0; i < n; i++) {
         cout << v[i] << " ";
     }
+    
+    cout << endl;
     
     return 0;
 }

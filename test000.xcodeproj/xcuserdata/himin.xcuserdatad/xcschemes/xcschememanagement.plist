@@ -189,10 +189,45 @@
 			<key>orderHint</key>
 			<integer>45</integer>
 		</dict>
+		<key>46-冒泡排序.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>46</integer>
+		</dict>
+		<key>47-希尔排序.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>47</integer>
+		</dict>
+		<key>48-选择排序.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>48</integer>
+		</dict>
+		<key>49-二叉树层次遍历.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>49</integer>
+		</dict>
 		<key>5.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>5</integer>
+		</dict>
+		<key>50-输出r的n次方.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>50</integer>
+		</dict>
+		<key>52-京东1.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>51</integer>
+		</dict>
+		<key>53-京东2.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>53</integer>
 		</dict>
 		<key>6.xcscheme</key>
 		<dict>
@@ -223,6 +258,11 @@
 		<dict>
 			<key>orderHint</key>
 			<integer>23</integer>
+		</dict>
+		<key>数位重排.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>52</integer>
 		</dict>
 		<key>整数求和.xcscheme</key>
 		<dict>

@@ -1,6 +1,6 @@
 //
 //  main.cpp
-//  45-直接插入排序
+//  48-选择排序
 //
 //  Created by 黄启明 on 2017/9/22.
 //  Copyright © 2017年 Himin. All rights reserved.
@@ -11,16 +11,24 @@
 
 using namespace std;
 
-void insertSort(vector<int> &v) {
+void selectSort(vector<int> &v) {
     int len = int(v.size());
-    for (int i = 1; i < len; i++) {
-        int tmp = v[i];
-        int j = i-1;
-        while (j >= 0 && tmp < v[j]) {
-            v[j+1] = v[j];
-            j--;
+    
+    int k = 0;
+    for (int i = 0; i < len-1; i++) {
+        k = i;
+        for (int j = i+1; j < len; j++) {
+            if (v[j] < v[k]) {
+                k = j;
+            }
         }
-        v[j+1] = tmp;
+        if (k != i) {
+            int tmp = v[i];
+            v[i] = v[k];
+            v[k] = tmp;
+        }
+        
+        //30 89 43 29 43 73
         for (int i = 0; i < len; i++) {
             cout << v[i] << " ";
         }
@@ -29,7 +37,7 @@ void insertSort(vector<int> &v) {
 }
 
 int main(int argc, const char * argv[]) {
-
+    
     int n;
     cin >> n;
     
@@ -38,11 +46,13 @@ int main(int argc, const char * argv[]) {
         cin >> v[i];
     }
     
-    insertSort(v);
+    selectSort(v);
     
-    for (int i = 0; i < n; i++) {
-        cout << v[i] << " ";
-    }
+//    for (int i = 0; i < n; i++) {
+//        cout << v[i] << " ";
+//    }
+//    
+//    cout << endl;
     
     return 0;
 }

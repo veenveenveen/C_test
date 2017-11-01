@@ -1,6 +1,6 @@
 //
 //  main.cpp
-//  45-直接插入排序
+//  46-冒泡排序
 //
 //  Created by 黄启明 on 2017/9/22.
 //  Copyright © 2017年 Himin. All rights reserved.
@@ -11,25 +11,32 @@
 
 using namespace std;
 
-void insertSort(vector<int> &v) {
+void bubbleSort(vector<int> &v) {
     int len = int(v.size());
-    for (int i = 1; i < len; i++) {
-        int tmp = v[i];
-        int j = i-1;
-        while (j >= 0 && tmp < v[j]) {
-            v[j+1] = v[j];
-            j--;
+    for (int i = 0; i < len; i++) {
+        bool flag = true;
+        for (int j = len-1; j > i; j--) {
+            if (v[j] < v[j-1]) {
+                int tmp = v[j];
+                v[j] = v[j-1];
+                v[j-1] = tmp;
+                flag = false;
+            }
         }
-        v[j+1] = tmp;
+        
         for (int i = 0; i < len; i++) {
             cout << v[i] << " ";
         }
         cout << endl;
+        
+        if (flag) {
+            break;
+        }
     }
 }
 
 int main(int argc, const char * argv[]) {
-
+    
     int n;
     cin >> n;
     
@@ -38,11 +45,13 @@ int main(int argc, const char * argv[]) {
         cin >> v[i];
     }
     
-    insertSort(v);
+    bubbleSort(v);
     
     for (int i = 0; i < n; i++) {
         cout << v[i] << " ";
     }
+    
+    cout << endl;
     
     return 0;
 }
