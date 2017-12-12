@@ -222,12 +222,22 @@
 		<key>52-京东1.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>51</integer>
+			<integer>53</integer>
 		</dict>
 		<key>53-京东2.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>53</integer>
+			<integer>52</integer>
+		</dict>
+		<key>56-多态.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>55</integer>
+		</dict>
+		<key>57-多态2.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>58</integer>
 		</dict>
 		<key>6.xcscheme</key>
 		<dict>
@@ -249,10 +259,25 @@
 			<key>orderHint</key>
 			<integer>9</integer>
 		</dict>
+		<key>eeee.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>56</integer>
+		</dict>
+		<key>ssss.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>57</integer>
+		</dict>
 		<key>test000.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>testtest.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>54</integer>
 		</dict>
 		<key>判断是否是回文数.xcscheme</key>
 		<dict>
@@ -262,7 +287,7 @@
 		<key>数位重排.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>52</integer>
+			<integer>51</integer>
 		</dict>
 		<key>整数求和.xcscheme</key>
 		<dict>
